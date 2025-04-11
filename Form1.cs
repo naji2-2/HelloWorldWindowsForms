@@ -31,5 +31,15 @@ namespace HelloWorldWindowsForms
         {
             lblTitle.Text = "쾅!";
         }
+
+        private void microsoftViToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
