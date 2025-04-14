@@ -41,5 +41,20 @@ namespace HelloWorldWindowsForms
         {
             Application.Exit();
         }
+
+        private void 도움말ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+                // 모달창
+                Form formAbout1 = new FormAbout();
+                formAbout1.Text = "모달창(modal)";
+                formAbout1.ShowDialog();
+
+                // 모달리스창
+                Form formAbout2 = new FormAbout();
+                formAbout2.Text = "모달리스창(Modeless)";
+                formAbout2.Show();
+            
+        }
     }
 }

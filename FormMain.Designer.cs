@@ -33,8 +33,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.microsoftViToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -82,6 +82,13 @@
             this.파일ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.파일ToolStripMenuItem.Text = "파일";
             // 
+            // 끝내기ToolStripMenuItem
+            // 
+            this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+            this.끝내기ToolStripMenuItem.Text = "끝내기";
+            this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.exit_Click);
+            // 
             // 도움말ToolStripMenuItem
             // 
             this.도움말ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -89,13 +96,7 @@
             this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
             this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.도움말ToolStripMenuItem.Text = "도움말";
-            // 
-            // 끝내기ToolStripMenuItem
-            // 
-            this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
-            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.끝내기ToolStripMenuItem.Text = "끝내기";
-            this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.exit_Click);
+            this.도움말ToolStripMenuItem.Click += new System.EventHandler(this.도움말ToolStripMenuItem_Click);
             // 
             // microsoftViToolStripMenuItem
             // 
