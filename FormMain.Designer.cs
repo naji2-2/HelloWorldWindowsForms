@@ -33,14 +33,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.열기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.저장ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.microsoftViToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.열기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.저장ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -77,7 +77,7 @@
             this.도움말ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(882, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(882, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -88,8 +88,23 @@
             this.저장ToolStripMenuItem,
             this.끝내기ToolStripMenuItem});
             this.파일ToolStripMenuItem.Name = "파일ToolStripMenuItem";
-            this.파일ToolStripMenuItem.Size = new System.Drawing.Size(53, 26);
+            this.파일ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.파일ToolStripMenuItem.Text = "파일";
+            // 
+            // 열기ToolStripMenuItem
+            // 
+            this.열기ToolStripMenuItem.Name = "열기ToolStripMenuItem";
+            this.열기ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.열기ToolStripMenuItem.Text = "열기";
+            this.열기ToolStripMenuItem.Click += new System.EventHandler(this.열기ToolStripMenuItem_Click);
+            // 
+            // 저장ToolStripMenuItem
+            // 
+            this.저장ToolStripMenuItem.Name = "저장ToolStripMenuItem";
+            this.저장ToolStripMenuItem.ShortcutKeyDisplayString = "( Ctrl+S )";
+            this.저장ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.저장ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.저장ToolStripMenuItem.Text = "저장";
             // 
             // 끝내기ToolStripMenuItem
             // 
@@ -105,7 +120,7 @@
             this.도움말ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.microsoftViToolStripMenuItem});
             this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
-            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(68, 26);
+            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.도움말ToolStripMenuItem.Text = "도움말";
             this.도움말ToolStripMenuItem.Click += new System.EventHandler(this.도움말ToolStripMenuItem_Click);
             // 
@@ -150,20 +165,6 @@
             this.textBox1.Size = new System.Drawing.Size(427, 409);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // 열기ToolStripMenuItem
-            // 
-            this.열기ToolStripMenuItem.Name = "열기ToolStripMenuItem";
-            this.열기ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.열기ToolStripMenuItem.Text = "열기";
-            // 
-            // 저장ToolStripMenuItem
-            // 
-            this.저장ToolStripMenuItem.Name = "저장ToolStripMenuItem";
-            this.저장ToolStripMenuItem.ShortcutKeyDisplayString = "( Ctrl+S )";
-            this.저장ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.저장ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.저장ToolStripMenuItem.Text = "저장";
             // 
             // FormMain
             // 
